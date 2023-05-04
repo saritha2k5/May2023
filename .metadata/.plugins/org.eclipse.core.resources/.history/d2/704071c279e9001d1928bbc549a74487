@@ -1,0 +1,57 @@
+package opencartpac;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class pageobjects_opencart_registration {
+	WebDriver driver;
+	By AccountLink=By.partialLinkText("My Account");
+	By RegisterLink=By.linkText("Register");		
+By firstname=By.id("input-firstname");
+By lastname=By.name("lastname");
+By email=By.xpath("//input[@name='email']");
+By password=By.cssSelector("input.form-control[name='password']");
+	By subscriptionyes=By.id("input-newsletter-yes");
+	By submitbutton=By.xpath("//button[@type='submit']");
+	public void clickonaccount()
+	{
+		driver.findElement(AccountLink).click();
+	}
+	
+	public void clickonregister()
+	{
+		driver.findElement(RegisterLink).click();
+	}
+	
+	public void enterfirstname()
+	{
+		driver.findElement(firstname).sendKeys("Gayathri");
+	}
+	
+	public void enterlastname()
+	{
+		driver.findElement(lastname).sendKeys("kumari");
+	}
+	
+	public void enteremail()
+	{
+		driver.findElement(email).sendKeys("gaya@yahoo.com");
+	}
+	
+	public void enterpassword()
+	{
+		driver.findElement(password).sendKeys("welcome");
+	}
+	
+	public Boolean entersubsciption()
+	{
+		Boolean flag;
+		flag=driver.findElement(subscriptionyes).isSelected();
+		return flag;
+	}
+	
+	public void clickonsubmit()
+	{
+		driver.findElement(submitbutton).click();
+	}
+}

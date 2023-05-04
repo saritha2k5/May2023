@@ -1,0 +1,10 @@
+package opencartpac;
+
+public class TC006_Alerts {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

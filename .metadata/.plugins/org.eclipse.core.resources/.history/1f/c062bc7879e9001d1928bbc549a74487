@@ -1,0 +1,16 @@
+package opencartpac;
+
+import org.openqa.selenium.By;
+
+public class pageobjects_opencart_registration {
+	
+	By AccountLink=By.partialLinkText("My Account");
+	By RegisterLink=By.linkText("Register");		
+By firstname=By.id("input-firstname");
+By lastname=By.name("lastname");
+By email=By.xpath("//input[@name='email']");
+By password=By.cssSelector("input.form-control[name='password']");
+	By subscriptionyes=By.id("input-newsletter-yes");
+	By submitbutton=By.xpath("//button[@type='submit']");
+	
+}
